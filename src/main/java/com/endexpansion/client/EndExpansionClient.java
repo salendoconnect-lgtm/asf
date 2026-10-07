@@ -27,8 +27,8 @@ public final class EndExpansionClient implements ClientModInitializer {
         EntityRendererRegistry.register(EndEntities.VOID_LEVIATHAN,c->new EndMobRenderer(c,MOB_LAYER,"void_leviathan"));
         EntityRendererRegistry.register(EndEntities.ENDER_NOMAD,c->new EndMobRenderer(c,MOB_LAYER,"ender_nomad"));
         EntityRendererRegistry.register(EndEntities.THE_NULL,c->new EndMobRenderer(c,MOB_LAYER,"the_null"));
-        EntityRendererRegistry.register(EndEntities.CRYSTAL_TITAN,c->new EndBossRenderer<>(c,BOSS_LAYER,"crystal_titan"));
-        EntityRendererRegistry.register(EndEntities.VOID_ARCHON,c->new EndBossRenderer<>(c,BOSS_LAYER,"void_archon"));
+        EntityRendererRegistry.register(EndEntities.CRYSTAL_TITAN,c->new EndBossRenderer(c,BOSS_LAYER,"crystal_titan"));
+        EntityRendererRegistry.register(EndEntities.VOID_ARCHON,c->new EndBossRenderer(c,BOSS_LAYER,"void_archon"));
         UseItemCallback.EVENT.register((player,world,hand)->{ if(player.getStackInHand(hand).isOf(EndItems.ENDER_COMPASS)){net.minecraft.client.MinecraftClient.getInstance().setScreen(new EnderCompassScreen());return net.minecraft.util.TypedActionResult.success(player.getStackInHand(hand));} return net.minecraft.util.TypedActionResult.pass(player.getStackInHand(hand));});
         ParticleFactoryRegistry reg=ParticleFactoryRegistry.getInstance();
         reg.register(EndParticles.ENDER_AMBIENT,EndParticle.Factory::new);reg.register(EndParticles.ENDER_DUST,EndParticle.Factory::new);reg.register(EndParticles.ENDER_ENERGY,EndParticle.Factory::new);

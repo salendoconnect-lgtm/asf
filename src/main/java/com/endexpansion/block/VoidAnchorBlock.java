@@ -26,9 +26,9 @@ public class VoidAnchorBlock extends Block {
         int charge=state.get(CHARGE);
         if(charge<=0)return;
         world.getPlayers(p->p.squaredDistanceTo(pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)<20*20).forEach(p->p.addStatusEffect(new net.minecraft.entity.effect.StatusEffectInstance(EndEffects.VOID_RESISTANCE,40,0,true,false)));
-        world.spawnParticles(com.endexpansion.registry.EndParticles.VOID_SPARK,pos.getX()+.5,pos.getY()+1,pos.getZ()+.5,4,.5,.5,.5,.02);
+        if(world instanceof ServerWorld sw) sw.spawnParticles(com.endexpansion.registry.EndParticles.VOID_SPARK,pos.getX()+.5,pos.getY()+1,pos.getZ()+.5,4,.5,.5,.5,.02);
         world.setBlockState(pos,state.with(CHARGE,charge-1));
         if(charge>1)world.scheduleBlockTick(pos,this,200);
     }
-    @Override public void onPlaced(World world,BlockPos pos,BlockState state,LivingEntity placer,ItemStack stack){if(!world.isClient)world.scheduleBlockTick(pos,this,200);}
+    public void onPlaced(World world,BlockPos pos,BlockState state,LivingEntity placer,ItemStack stack){if(!world.isClient)world.scheduleBlockTick(pos,this,200);}
 }

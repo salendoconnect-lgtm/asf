@@ -34,7 +34,7 @@ public class VoidArchonEntity extends PathAwareEntity {
     private void telegraph(){
         pendingAttack=10;
         world.playSound(null,getBlockPos(),com.endexpansion.registry.EndSounds.BOSS_ARCHON,net.minecraft.sound.SoundCategory.HOSTILE,1.2f,0.7f+phase*.08f);
-        world.spawnParticles(EndParticles.REALITY_DISTORTION,getX(),getY()+1,getZ(),35,2,2,2,.05);
+        if(world instanceof net.minecraft.server.world.ServerWorld sw) sw.spawnParticles(EndParticles.REALITY_DISTORTION,getX(),getY()+1,getZ(),35,2,2,2,.05);
     }
     private void performAttack(){
         world.getNonSpectatingEntities(PlayerEntity.class,getBoundingBox().expand(phase>=4?18:12)).forEach(p->{
@@ -43,7 +43,7 @@ public class VoidArchonEntity extends PathAwareEntity {
             else if(d<18)p.damage(world.getDamageSources().magic(),6+phase);
         });
         if(phase>=3)requestTeleport(getX()+(random.nextDouble()-.5)*14,getY(),getZ()+(random.nextDouble()-.5)*14);
-        if(phase>=4){for(int i=0;i<6;i++){net.minecraft.util.math.BlockPos q=getBlockPos().add(random.nextInt(15)-7,random.nextInt(4)-1,random.nextInt(15)-7);if(world.getBlockState(q).isOpaque())world.breakBlock(q,false);}world.spawnParticles(EndParticles.VOID_EXPLOSION,getX(),getY()+1,getZ(),55,3,2,3,.12);}
+        if(phase>=4){for(int i=0;i<6;i++){net.minecraft.util.math.BlockPos q=getBlockPos().add(random.nextInt(15)-7,random.nextInt(4)-1,random.nextInt(15)-7);if(world.getBlockState(q).isOpaque())world.breakBlock(q,false);}if(world instanceof net.minecraft.server.world.ServerWorld sw) sw.spawnParticles(EndParticles.VOID_EXPLOSION,getX(),getY()+1,getZ(),55,3,2,3,.12);}
         if(phase==5)world.getNonSpectatingEntities(PlayerEntity.class,getBoundingBox().expand(24)).forEach(p->p.damage(world.getDamageSources().magic(),10));
     }
     @Override public void onDeath(net.minecraft.entity.damage.DamageSource source){

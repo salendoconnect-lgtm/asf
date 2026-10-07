@@ -10,6 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.*;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
 import java.util.List;
 public class EndArtifactItem extends Item {
@@ -30,7 +31,7 @@ public class EndArtifactItem extends Item {
             player.getItemCooldownManager().set(this,120);
         } else if(stack.isOf(EndItems.CRYSTAL_CORE)){
             if(world.getRegistryKey()==net.minecraft.world.World.END && world.getBiome(player.getBlockPos()).value() == com.endexpansion.world.EndBiomes.biome(com.endexpansion.world.EndBiomes.CRYSTAL_CAVES)){
-                boolean exists=!world.getEntitiesByType(com.endexpansion.registry.EndEntities.CRYSTAL_TITAN,e->e.isAlive() && e.squaredDistanceTo(player)<96*96).isEmpty();
+                boolean exists=!world.getEntitiesByType(com.endexpansion.registry.EndEntities.CRYSTAL_TITAN,player.getBoundingBox().expand(96),e->e.isAlive() && e.squaredDistanceTo(player)<96*96).isEmpty();
                 if(!exists){
                     com.endexpansion.entity.CrystalTitanEntity titan=new com.endexpansion.entity.CrystalTitanEntity(com.endexpansion.registry.EndEntities.CRYSTAL_TITAN,world);
                     titan.refreshPositionAndAngles(player.getBlockPos().up(),player.getYaw(),0);world.spawnEntity(titan);stack.decrement(1);player.sendMessage(Text.translatable("message.endexpansion.titan_summoned"),true);
@@ -39,7 +40,7 @@ public class EndArtifactItem extends Item {
             player.getItemCooldownManager().set(this,400);
         } else if(stack.isOf(EndItems.VOID_KEY)){
             if(world.getRegistryKey()==net.minecraft.world.World.END && player.squaredDistanceTo(0,64,0)>320*320){
-                boolean exists=!world.getEntitiesByType(com.endexpansion.registry.EndEntities.VOID_ARCHON,e->e.isAlive() && e.squaredDistanceTo(player)<192*192).isEmpty();
+                boolean exists=!world.getEntitiesByType(com.endexpansion.registry.EndEntities.VOID_ARCHON,player.getBoundingBox().expand(192),e->e.isAlive() && e.squaredDistanceTo(player)<192*192).isEmpty();
                 if(!exists){
                     com.endexpansion.entity.VoidArchonEntity boss=new com.endexpansion.entity.VoidArchonEntity(com.endexpansion.registry.EndEntities.VOID_ARCHON,world);
                     boss.refreshPositionAndAngles(player.getBlockPos().up(2),player.getYaw(),0);world.spawnEntity(boss);stack.decrement(1);player.sendMessage(Text.translatable("message.endexpansion.archon_summoned"),true);

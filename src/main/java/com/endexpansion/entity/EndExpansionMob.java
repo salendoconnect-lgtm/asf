@@ -65,7 +65,7 @@ public class EndExpansionMob extends PathAwareEntity {
         if(kind==Kind.VOID_LEVIATHAN && getTarget()!=null && distanceTo(getTarget())>40){setTarget(null);}
         if(kind==Kind.VOID_FLYER && age%40==0) setVelocity(getVelocity().add(0,(random.nextDouble()-.35)*.08,0));
         if(kind==Kind.CRYSTAL_GOLEM && hurtTime>0 && age%8==0){
-            world.spawnParticles(EndParticles.CRYSTAL_SHARD,getX(),getY()+1,getZ(),8,.5,.5,.5,.08);
+            if(world instanceof net.minecraft.server.world.ServerWorld sw) sw.spawnParticles(EndParticles.CRYSTAL_SHARD,getX(),getY()+1,getZ(),8,.5,.5,.5,.08);
         }
         if(kind==Kind.VOID_STALKER && getTarget()!=null && age%30==0 && distanceTo(getTarget())>8) rangedPulse();
         if(kind==Kind.VOID_LEVIATHAN && getTarget()!=null && distanceTo(getTarget())<24 && age%60==0) diveStrike();
@@ -75,7 +75,7 @@ public class EndExpansionMob extends PathAwareEntity {
     protected void rangedPulse(){
         LivingEntity t=getTarget(); if(t==null)return;
         t.damage(world.getDamageSources().magic(),4f);
-        world.spawnParticles(EndParticles.VOID_BEAM,getX(),getY()+1,getZ(),18,.2,.2,.2,.1);
+        if(world instanceof net.minecraft.server.world.ServerWorld sw) sw.spawnParticles(EndParticles.VOID_BEAM,getX(),getY()+1,getZ(),18,.2,.2,.2,.1);
     }
     protected void diveStrike(){
         LivingEntity t=getTarget(); if(t==null)return;
@@ -84,7 +84,7 @@ public class EndExpansionMob extends PathAwareEntity {
     }
     protected void nullPulse(){
         world.getNonSpectatingEntities(PlayerEntity.class,getBoundingBox().expand(12)).forEach(p->p.damage(world.getDamageSources().magic(),5f));
-        world.spawnParticles(EndParticles.REALITY_DISTORTION,getX(),getY()+1,getZ(),24,1,1,1,.12);
+        if(world instanceof net.minecraft.server.world.ServerWorld sw) sw.spawnParticles(EndParticles.REALITY_DISTORTION,getX(),getY()+1,getZ(),24,1,1,1,.12);
     }
     protected boolean teleportRandomly(){
         double x=getX()+(random.nextDouble()-.5)*16,y=getY()+(random.nextInt(7)-3),z=getZ()+(random.nextDouble()-.5)*16;
