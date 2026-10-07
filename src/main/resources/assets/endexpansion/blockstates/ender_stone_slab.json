@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "endexpansion:block/ender_stone_slab"
+      }
+    }
+  ]
+}

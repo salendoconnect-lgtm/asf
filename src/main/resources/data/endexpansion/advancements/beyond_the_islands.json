@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "location": {
+      "trigger": "minecraft:location",
+      "conditions": {}
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:ender_pearl"
+    },
+    "title": {
+      "translate": "advancements.endexpansion.beyond_the_islands.title"
+    },
+    "description": {
+      "translate": "advancements.endexpansion.beyond_the_islands.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

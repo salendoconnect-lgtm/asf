@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endexpansion:void_key"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "endexpansion:void_key"
+    },
+    "title": {
+      "translate": "advancements.endexpansion.face_the_void.title"
+    },
+    "description": {
+      "translate": "advancements.endexpansion.face_the_void.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "endexpansion:into_the_abyss"
+}

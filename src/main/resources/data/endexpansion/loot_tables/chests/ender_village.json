@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:ender_essence"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:ender_seed"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:ender_pearl_shard"
+        }
+      ]
+    }
+  ]
+}

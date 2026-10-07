@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NAN",
+    "AVA",
+    "NAN"
+  ],
+  "key": {
+    "N": {
+      "item": "endexpansion:nullium_fragment"
+    },
+    "A": {
+      "item": "endexpansion:ancient_ender_key"
+    },
+    "V": {
+      "item": "endexpansion:void_crystal"
+    }
+  },
+  "result": {
+    "item": "endexpansion:void_key",
+    "count": 1
+  }
+}

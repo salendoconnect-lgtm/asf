@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SCS",
+    "CGC",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "item": "endexpansion:ender_essence"
+    },
+    "C": {
+      "item": "endexpansion:crystal_dust"
+    },
+    "G": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result": {
+    "item": "endexpansion:ender_lantern",
+    "count": 1
+  }
+}

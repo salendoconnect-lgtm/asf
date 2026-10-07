@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "com.endexpansion.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": ["TheEndBiomeSourceMixin"],
+  "injectors": {"defaultRequire": 1}
+}

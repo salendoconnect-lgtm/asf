@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "charge=0": {
+      "model": "endexpansion:block/void_anchor"
+    },
+    "charge=1": {
+      "model": "endexpansion:block/void_anchor"
+    },
+    "charge=2": {
+      "model": "endexpansion:block/void_anchor"
+    },
+    "charge=3": {
+      "model": "endexpansion:block/void_anchor"
+    },
+    "charge=4": {
+      "model": "endexpansion:block/void_anchor"
+    },
+    "charge=5": {
+      "model": "endexpansion:block/void_anchor"
+    },
+    "charge=6": {
+      "model": "endexpansion:block/void_anchor"
+    },
+    "charge=7": {
+      "model": "endexpansion:block/void_anchor"
+    },
+    "charge=8": {
+      "model": "endexpansion:block/void_anchor"
+    }
+  }
+}

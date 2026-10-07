@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "ECR",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "endexpansion:ender_essence"
+    },
+    "C": {
+      "item": "endexpansion:reality_core"
+    },
+    "R": {
+      "item": "endexpansion:enderite_ingot"
+    }
+  },
+  "result": {
+    "item": "endexpansion:ender_sigil",
+    "count": 1
+  }
+}

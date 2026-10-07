@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endexpansion:enderite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "endexpansion:enderite_ingot"
+    },
+    "title": {
+      "translate": "advancements.endexpansion.enderite.title"
+    },
+    "description": {
+      "translate": "advancements.endexpansion.enderite.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "endexpansion:crystal_seeker"
+}

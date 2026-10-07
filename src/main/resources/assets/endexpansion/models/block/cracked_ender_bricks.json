@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "endexpansion:block/cracked_ender_bricks"
+  }
+}

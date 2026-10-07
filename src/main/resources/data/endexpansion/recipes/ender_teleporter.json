@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EKE",
+    "KDK",
+    "EKE"
+  ],
+  "key": {
+    "E": {
+      "item": "endexpansion:ender_essence"
+    },
+    "K": {
+      "item": "endexpansion:ancient_ender_key"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "endexpansion:ender_teleporter",
+    "count": 1
+  }
+}

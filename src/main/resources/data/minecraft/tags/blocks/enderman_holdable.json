@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "endexpansion:ender_stone",
+    "endexpansion:ender_soil",
+    "endexpansion:ender_rock"
+  ]
+}

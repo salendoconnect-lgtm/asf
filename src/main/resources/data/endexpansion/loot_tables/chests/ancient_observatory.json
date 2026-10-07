@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:eye_of_the_void"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:ender_sigil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:reality_fragment"
+        }
+      ]
+    }
+  ]
+}

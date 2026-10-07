@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    " G ",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "endexpansion:ender_pearl_shard"
+    },
+    "G": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "endexpansion:ender_bottle",
+    "count": 1
+  }
+}

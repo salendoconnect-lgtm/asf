@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "endexpansion:enderling",
+    "endexpansion:void_stalker",
+    "endexpansion:crystal_mite",
+    "endexpansion:ender_wraith",
+    "endexpansion:void_flyer",
+    "endexpansion:end_guardian",
+    "endexpansion:crystal_golem",
+    "endexpansion:void_leviathan",
+    "endexpansion:ender_nomad",
+    "endexpansion:the_null",
+    "endexpansion:crystal_titan",
+    "endexpansion:void_archon",
+    "endexpansion:crystal_titan",
+    "endexpansion:void_archon"
+  ]
+}

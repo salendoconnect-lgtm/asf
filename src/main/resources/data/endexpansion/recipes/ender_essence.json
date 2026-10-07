@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "endexpansion:ender_pearl_shard"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    }
+  ],
+  "result": {
+    "item": "endexpansion:ender_essence",
+    "count": 2
+  }
+}

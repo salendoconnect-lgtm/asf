@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "endexpansion:raw_enderite"
+  },
+  "result": "endexpansion:enderite_ingot",
+  "experience": 2.0,
+  "cookingtime": 100
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:enderite_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:void_crystal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:nullium_fragment"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:enderite_sword"
+        }
+      ]
+    }
+  ]
+}

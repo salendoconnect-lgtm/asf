@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "PEP",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "endexpansion:ender_pearl_shard"
+    },
+    "E": {
+      "item": "minecraft:compass"
+    }
+  },
+  "result": {
+    "item": "endexpansion:ender_compass",
+    "count": 1
+  }
+}

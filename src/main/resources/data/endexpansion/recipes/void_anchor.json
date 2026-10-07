@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ONO",
+    "NCN",
+    "ONO"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "N": {
+      "item": "endexpansion:nullium_fragment"
+    },
+    "C": {
+      "item": "endexpansion:void_crystal"
+    }
+  },
+  "result": {
+    "item": "endexpansion:void_anchor",
+    "count": 1
+  }
+}

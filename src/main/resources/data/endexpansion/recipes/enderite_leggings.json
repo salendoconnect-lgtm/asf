@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "endexpansion:enderite_ingot"
+    }
+  },
+  "result": {
+    "item": "endexpansion:enderite_leggings",
+    "count": 1
+  }
+}

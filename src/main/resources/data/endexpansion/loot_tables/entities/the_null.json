@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:eye_of_the_void"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:heart_of_the_end"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:void_crown"
+        }
+      ]
+    }
+  ]
+}

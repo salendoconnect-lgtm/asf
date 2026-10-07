@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endexpansion:ancient_ender_key"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "endexpansion:ancient_ender_key"
+    },
+    "title": {
+      "translate": "advancements.endexpansion.ancient_knowledge.title"
+    },
+    "description": {
+      "translate": "advancements.endexpansion.ancient_knowledge.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "endexpansion:void_explorer"
+}

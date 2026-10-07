@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "endexpansion",
+  "version": "${version}",
+  "name": "End Expansion",
+  "description": "A large-scale End dimension expansion for Minecraft 1.20.1.",
+  "authors": ["End Expansion"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.endexpansion.EndExpansion"],
+    "client": ["com.endexpansion.client.EndExpansionClient"]
+  },
+  "mixins": ["endexpansion.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "1.20.1",
+    "fabric-api": ">=0.92.0"
+  }
+}

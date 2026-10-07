@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "endexpansion:ender_log",
+    "endexpansion:stripped_ender_log",
+    "endexpansion:ender_wood",
+    "endexpansion:stripped_ender_wood",
+    "endexpansion:ender_planks"
+  ]
+}

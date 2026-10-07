@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "endexpansion:void_archon"
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:ender_pearl"
+    },
+    "title": {
+      "translate": "advancements.endexpansion.beyond_reality.title"
+    },
+    "description": {
+      "translate": "advancements.endexpansion.beyond_reality.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "endexpansion:face_the_void"
+}

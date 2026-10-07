@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "endexpansion:raw_enderite"
+    }
+  },
+  "result": {
+    "item": "endexpansion:raw_enderite_block",
+    "count": 1
+  }
+}

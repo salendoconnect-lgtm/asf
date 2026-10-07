@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "endexpansion:end_crystal_block",
+    "endexpansion:crystal_glass",
+    "endexpansion:crystal_bricks",
+    "endexpansion:crystal_pillar",
+    "endexpansion:crystal_lamp",
+    "endexpansion:crystal_cluster"
+  ]
+}

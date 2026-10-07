@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endexpansion:nullium_fragment"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "endexpansion:nullium_fragment"
+    },
+    "title": {
+      "translate": "advancements.endexpansion.into_the_abyss.title"
+    },
+    "description": {
+      "translate": "advancements.endexpansion.into_the_abyss.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "endexpansion:guardian_slayer"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RCR",
+    "N N",
+    " N "
+  ],
+  "key": {
+    "R": {
+      "item": "endexpansion:enderite_ingot"
+    },
+    "C": {
+      "item": "endexpansion:reality_core"
+    },
+    "N": {
+      "item": "endexpansion:nullium_fragment"
+    }
+  },
+  "result": {
+    "item": "endexpansion:void_crown",
+    "count": 1
+  }
+}

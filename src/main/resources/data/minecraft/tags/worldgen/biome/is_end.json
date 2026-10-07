@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "endexpansion:ender_wastes",
+    "endexpansion:ender_forests",
+    "endexpansion:purple_swamps",
+    "endexpansion:crystal_caves",
+    "endexpansion:floating_islands",
+    "endexpansion:end_abyss"
+  ]
+}

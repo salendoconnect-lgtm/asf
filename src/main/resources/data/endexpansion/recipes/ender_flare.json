@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SES",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "endexpansion:crystal_dust"
+    },
+    "E": {
+      "item": "endexpansion:ender_essence"
+    }
+  },
+  "result": {
+    "item": "endexpansion:ender_flare",
+    "count": 4
+  }
+}

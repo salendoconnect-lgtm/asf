@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:reality_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:ender_sigil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:reality_fragment"
+        }
+      ]
+    }
+  ]
+}

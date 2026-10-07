@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:ancient_ender_key"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:ender_pearl_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:enderite_nugget"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "endexpansion:crystal_dust"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "endexpansion:ender_stone",
+    "endexpansion:ender_bricks",
+    "endexpansion:ender_tiles",
+    "endexpansion:void_stone",
+    "endexpansion:void_bricks"
+  ]
+}

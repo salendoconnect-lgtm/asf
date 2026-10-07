@@ -1,0 +1,12 @@
+{
+  "ambient_end": { "sounds": ["endexpansion:ambient_end"] },
+  "void_ambient": { "sounds": ["endexpansion:void_ambient"] },
+  "enderling_idle": { "sounds": ["endexpansion:enderling_idle"] },
+  "void_stalker_attack": { "sounds": ["endexpansion:void_stalker_attack"] },
+  "crystal_hit": { "sounds": ["endexpansion:crystal_hit"] },
+  "teleport": { "sounds": ["endexpansion:teleport"] },
+  "void_beam": { "sounds": ["endexpansion:void_beam"] },
+  "boss_crystal": { "sounds": ["endexpansion:boss_crystal"] },
+  "boss_archon": { "sounds": ["endexpansion:boss_archon"] },
+  "reality_shift": { "sounds": ["endexpansion:reality_shift"] }
+}
